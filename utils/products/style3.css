@@ -649,7 +649,7 @@ nav img {
     color: #f9fafb;
 }
 .nav-links{
-    position: absolute;
+    position: fixed;
     background-color: blueviolet;
     height: 100vh;
     width: 200px;
@@ -875,7 +875,7 @@ flex-direction: column;
       color: #f9fafb;
   }
   .nav-links{
-      position: absolute;
+      position: fixed;
       background-color: blueviolet;
       height: 100vh;
       width: 200px;
