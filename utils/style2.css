@@ -410,7 +410,7 @@ body {
 
 .carousel-slide, .review-card, .carousel__face {
   width: 80%;
-  max-width: 150px;
+  max-width: 190px;
 }
 
 .carousel__face:nth-child(1) {
