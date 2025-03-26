@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>LIFE SAVERS TEAM</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" id="logo"><img src="Images/logo1.png" alt="Logo"></a>
+        <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="utils/aboutUs.html">About Us</a></li>
+                <li><a href="utils/contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section> 
+
+    <!-- <section class="home-banner">
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-images">
+                    <img src="Images/banner/PEOPLE IN THE IMAGE.png" alt="Family" class="banner-people">
+                </div>
+                <div class="banner-text">
+                    <div class="small-logo">
+                        <img src="Images/banner/SMALL LOGO.png" alt="Small Logo">
+                    </div>
+                    <div class="main-text">
+                        <h1 class="insurance-text">
+                            <span class="black-text">ALL INSURANCE</span><br>
+                            <span class="white-text">SERVICES</span> <span class="black-text">IN ONE</span><br>
+                            <span class="orange-text">PLATFORM</span>
+                        </h1>
+                        <p class="tagline">Protect Your<br>Future, Today</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+<section class="banner">
+    <!-- <div class="col1">
+        <img class="family" src="Images/banner/PEOPLE IN THE IMAGE.png" alt="Family">
+    </div>
+    <div class="col2">
+        <div class="small-logo">
+            <img src="Images/banner/SMALL LOGO.png" alt="Small Logo">
+        </div>
+        <div class="main-text">
+         <div class="insurance-text">
+            <img src="/Images/banner/textImg.png" alt="text"> -->
+              <!-- <p> <span class="black-text">ALL INSURANCE</span><br></p> 
+              <p>  <span class="white-text">SERVICES</span> <span class="black-text">IN ONE</span><br></p> 
+              <p> <span class="orange-text">PLATFORM</span></p>  -->
+         <!-- </div>
+            <p id="tagline1" class="tagline">Protect Your</p>
+            <p id="tagline2"  class="tagline">Future, Today</p>
+        </div>
+    </div> -->
+<!--Image Slider Start -->
+<div class="slider">
+    <div class="slides">
+        <!-- Radio Button start -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- Radio Button End -->
+         <!-- Slide Images Start -->
+          <div class="slide first">
+            <img src="/Images/banner/slide1.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="/Images/banner/slide2.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="/Images/banner/slide3.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="/Images/banner/slide4.png" alt="">
+          </div>
+          <!-- Automatic Navigation Start -->
+           <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+           </div>
+          <!-- Automatic Navigation End -->
+    </div>
+        <!-- Manual Navigation Start -->
+         <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+         </div>
+        <!-- Manual Navigation End -->
+
+</div>
+<!--Image Slider End -->
+
+
+</section>
+
+
+<!-- -----------------------------Products-------------------------------- -->
+ <section class="products">
+    <h1>Insurance Products</h1>
+    <p>Lets find the best insurance product</p>
+    <div class="row">
+        <a href="utils/products/term.html">
+            <div class="product-col">
+                <img id="termImg" src="Images/term.png" alt="Term Logo">
+            <h3>TERM INSURANCE</h3>
+        </div>
+        </a>
+        <a href="utils/products/health.html">
+            <div class="product-col">
+                <img id="termImg" src="Images/health.png" alt="Term Logo">
+                 <h3>HEALTH INSURANCE</h3>
+            </div>
+        </a>
+        <a href="utils/products/retirement.html">
+            <div class="product-col">
+                <img id="termImg" src="Images/retirement.png" alt="Term Logo">
+                <h3>RETIREMENT PLANS</h3>
+            </div>
+        </a>
+        <a href="utils/products/children.html">
+            <div class="product-col">
+                <img id="termImg" src="Images/children.png" alt="Term Logo">
+                <h3>CHILDREN RELATED PLANS</h3>
+            </div>
+        </a>
+        <a href="utils/products/pension.html">
+            <div class="product-col">
+                <img id="termImg" src="Images/pension.png" alt="Term Logo">
+                <h3>PENSION PLANS</h3>
+            </div>
+        </a>
+        <a href="utils/products/ulip.html">
+            <div class="product-col">
+                <img id="termImg" src="Images/ulip.png" alt="Term Logo">
+                <h3>ULIP PLANS</h3>
+            </div>
+        </a>
+        <div style="width: 30%;"></div>
+        <a href="utils/products/savings.html">
+            <div class="product-col">
+                <img id="termImg" src="Images/savings.png" alt="Term Logo">
+                <h3>SAVINGS & INVESTMENTS</h3>
+            </div>
+        </a>
+        <div style="width: 30%;"></div>
+        </div>
+    </div>
+ </section>
+
+ <section class="brands">
+    <h1>Brands we deal with</h1>
+    
+    <div class="logo-carousel">
+        <div class="logo-container">
+            <!-- First set of logos -->
+            <img src="/Images/brand/LOGOS/1.png" alt="Logo 1" class="logo">
+            <img src="/Images/brand/LOGOS/2.png" alt="Logo 2" class="logo">
+            <img src="/Images/brand/LOGOS/3.png" alt="Logo 3" class="logo">
+            <img src="/Images/brand/LOGOS/4.png" alt="Logo 4" class="logo">
+            <img src="/Images/brand/LOGOS/5.png" alt="Logo 5" class="logo">
+            <img src="/Images/brand/LOGOS/6.png" alt="Logo 6" class="logo">
+            <img src="/Images/brand/LOGOS/7.png" alt="Logo 7" class="logo">
+            <img src="/Images/brand/LOGOS/8.png" alt="Logo 8" class="logo">
+            <img src="/Images/brand/LOGOS/9.png" alt="Logo 9" class="logo">
+            <img src="/Images/brand/LOGOS/10.png" alt="Logo 10" class="logo">
+            <img src="/Images/brand/LOGOS/11.png" alt="Logo 11" class="logo">
+            <img src="/Images/brand/LOGOS/12.png" alt="Logo 12" class="logo">
+            <img src="/Images/brand/LOGOS/13.png" alt="Logo 13" class="logo">
+            <img src="/Images/brand/LOGOS/14.png" alt="Logo 14" class="logo">
+            
+            <!-- Duplicate logos for seamless scrolling -->
+            <img src="/Images/brand/LOGOS/1.png" alt="Logo 1" class="logo">
+            <img src="/Images/brand/LOGOS/2.png" alt="Logo 2" class="logo">
+            <img src="/Images/brand/LOGOS/3.png" alt="Logo 3" class="logo">
+            <img src="/Images/brand/LOGOS/4.png" alt="Logo 4" class="logo">
+            <img src="/Images/brand/LOGOS/5.png" alt="Logo 5" class="logo">
+            <img src="/Images/brand/LOGOS/6.png" alt="Logo 6" class="logo">
+            <img src="/Images/brand/LOGOS/7.png" alt="Logo 7" class="logo">
+    </div>
+ </section>
+
+ <section class="reviews">
+    <h1>Honest Reviews by Our Valid Customers</h1>
+    
+    <div class="reviews-carousel">
+        <div class="reviews-track">
+            <!-- Review Cards -->
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="reviewer-info">
+                        <div class="reviewer-img">
+                            <img src="Images/man.png" alt="Reviewer 1">
+                        </div>
+                        <div class="reviewer-name">
+                            <h3>Rajesh Kumar</h3>
+                            <p class="reviewer-location">Delhi</p>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"I was looking for a comprehensive term insurance plan for my family. The Life Savers Team guided me through various options and helped me choose the perfect plan that fits my budget and provides excellent coverage."</p>
+                </div>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="reviewer-info">
+                        <div class="reviewer-img">
+                            <img src="Images/woman.png" alt="Reviewer 2">
+                        </div>
+                        <div class="reviewer-name">
+                            <h3>Priya Sharma</h3>
+                            <p class="reviewer-location">Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"The health insurance policy recommended by Life Savers Team has been a blessing for my family. Their expert advice helped us get the best coverage for our specific needs. Highly recommend their services!"</p>
+                </div>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="reviewer-info">
+                        <div class="reviewer-img">
+                            <img src="Images/man.png" alt="Reviewer 3">
+                        </div>
+                        <div class="reviewer-name">
+                            <h3>Vikram Singh</h3>
+                            <p class="reviewer-location">Bangalore</p>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"I was confused about retirement planning options. The team at Life Savers provided clear, personalized advice and helped me set up a retirement plan that will secure my future. Their knowledge and patience are commendable."</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="reviewer-info">
+                        <div class="reviewer-img">
+                            <img src="Images/woman.png" alt="Reviewer 3">
+                        </div>
+                        <div class="reviewer-name">
+                            <h3>Veknatlakshmi</h3>
+                            <p class="reviewer-location">Andhra Pradesh</p>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">Giribabu garu naku health insurance theeskomani suggest chesaru, nenu ayana cheppina vidhanam choosi ok ani cheppanu, kontha kalam nunchi naku arogyam baledhu,ee private hospitals lo treatment lu theeskune antha sthomatha ledhu kani giribabu gari valana ippudu nenu hospital bills kattukogaluguthunnanu</p>
+                </div>
+            </div>
+            
+            <!-- Duplicate cards for continuous scrolling -->
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="reviewer-info">
+                        <div class="reviewer-img">
+                            <img src="Images/man.png" alt="Reviewer 1">
+                        </div>
+                        <div class="reviewer-name">
+                            <h3>Rajesh Kumar</h3>
+                            <p class="reviewer-location">Delhi</p>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"I was looking for a comprehensive term insurance plan for my family. The Life Savers Team guided me through various options and helped me choose the perfect plan that fits my budget and provides excellent coverage."</p>
+                </div>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="reviewer-info">
+                        <div class="reviewer-img">
+                            <img src="Images/woman.png" alt="Reviewer 2">
+                        </div>
+                        <div class="reviewer-name">
+                            <h3>Priya Sharma</h3>
+                            <p class="reviewer-location">Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"The health insurance policy recommended by Life Savers Team has been a blessing for my family. Their expert advice helped us get the best coverage for our specific needs. Highly recommend their services!"</p>
+                </div>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="reviewer-info">
+                        <div class="reviewer-img">
+                            <img src="Images/man.png" alt="Reviewer 3">
+                        </div>
+                        <div class="reviewer-name">
+                            <h3>Vikram Singh</h3>
+                            <p class="reviewer-location">Bangalore</p>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"I was confused about retirement planning options. The team at Life Savers provided clear, personalized advice and helped me set up a retirement plan that will secure my future. Their knowledge and patience are commendable."</p>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="reviewer-info">
+                        <div class="reviewer-img">
+                            <img src="Images/woman.png" alt="Reviewer 3">
+                        </div>
+                        <div class="reviewer-name">
+                            <h3>Veknatlakshmi</h3>
+                            <p class="reviewer-location">Andhra Pradesh</p>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">Giribabu garu naku health insurance theeskomani suggest chesaru, nenu ayana cheppina vidhanam choosi ok ani cheppanu, kontha kalam nunchi naku arogyam baledhu,ee private hospitals lo treatment lu theeskune antha sthomatha ledhu kani giribabu gari valana ippudu nenu hospital bills kattukogaluguthunnanu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+
+<!-- -----------------------------Posters Carousel-------------------------------- -->
+<section class="posters">
+    <h1>Our Posters</h1>
+    <p>Check out our latest insurance posters</p>
+    
+    <div class="posters-carousel">
+        <!-- Posters carousel with images from posters folder -->
+        <div class="carousel-track">
+            <div class="carousel-slide">
+                <img src="Images/posters/poster1.png" alt="Insurance Poster 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/posters/poster2.png" alt="Insurance Poster 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/posters/poster3.png" alt="Insurance Poster 3">
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/posters/poster4.png" alt="Insurance Poster 4">
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/posters/poster5.png" alt="Insurance Poster 5">
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/posters/poster6.png" alt="Insurance Poster 6">
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/posters/poster7.png" alt="Insurance Poster 7">
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/posters/poster8.png" alt="Insurance Poster 8">
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/posters/poster9.png" alt="Insurance Poster 9">
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/posters/poster10.png" alt="Insurance Poster 10">
+            </div>
+
+            <div class="carousel-slide">
+                <img src="Images/posters/poster1.png" alt="Insurance Poster 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/posters/poster2.png" alt="Insurance Poster 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/posters/poster3.png" alt="Insurance Poster 3">
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/posters/poster5.png" alt="Insurance Poster 3">
+            </div>
+            <div class="carousel-slide">
+                <img src="Images/posters/poster6.png" alt="Insurance Poster 3">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- -----------------contact--------------- -->
+
+<section class="contact">
+    <h1>FOR MORE DETAILS REGARDING INSURANCE<br>OR ADVICES RELATED TO INSURANCE.</h1>
+    <a href="utils/contactUs.html" class="btn">CONTACT US</a>
+</section>
+
+<!-- -----------------footer--------------- -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are a trusted insurance agency dedicated to providing comprehensive policies <br> from leading insurance providers. With years of industry experience, <br> We help individuals and businesses find the best coverage tailored to their needs.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/share/18n3wZrj19/"><i class="ico fa-brands fa-facebook" style="color: #5e45a4;"></i></a>
+        <a href="https://www.instagram.com/giribabuk_financialadvisor/profilecard/?igsh=N3QzZnc2djE3b215"><i class="ico fa-brands fa-instagram" style="color: #5e45a4;"></i></a>
+        <a href="https://youtube.com/@giribabukfinancialadvisor?si=ikndlwdk2WZJ96n1"><i class="ico fa-brands fa-youtube" style="color: #5e45a4;"></i></a>
+        <a href="mailto:example@email.com"><i class="ico fa-solid fa-envelope" style="color: #5e45a4;"></i></a>
+        <a href="https://wa.me/919492719182?text=Hi%2C%20I%20am%20intrested%20to%20know%20about%20Insurance%20Plans"><i class="ico fa-brands fa-whatsapp" style="color: #5e45a4;"></i></a>
+    </div>
+    <p>Made by Dk & NK <i class="ico fa-solid fa-code" style="color: #5e45a4;"></i></p>
+</section>
+
+
+<script>
+    let navLinks = document.getElementById("navLinks");
+    function showMenu(){
+         navLinks.style.right =" 0";            
+    }
+    function hideMenu(){
+    navLinks.style.right = "-200px";            
+    }
+    let counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      },4000)
+    </script>
+    <script src="https://kit.fontawesome.com/8178d30b72.js" crossorigin="anonymous"></script>
+</body>
+</html>

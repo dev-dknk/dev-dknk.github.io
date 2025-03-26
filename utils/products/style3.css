@@ -1,0 +1,1158 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+}
+body{
+    /* background-image: url(../../Images/bg.avif);
+    background-position: center;
+    background-size: cover;
+    position: relative; */
+    background-color: #fff;
+}
+
+.header1{
+    /* min-height: 100vh;
+    width: 100%; */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    height: 20px;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    /* backdrop-filter: blur(10px); */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav img{
+    width: 300px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    color: #5E45A4;
+    font-weight: 600;
+    /* font-size: 13px; */
+}
+
+.nav-links ul li ::after {
+    content: " ";
+    width: 0;
+    height: 4px;
+    border-radius: 5%;
+    background : #5E45A4; 
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover ::after {
+    width: 100%;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+/* ------------------------------------content---------------------------------- */
+.content{
+    margin-top: 50px ;
+    text-align: center;
+
+}
+
+
+/* ----------------------------------photo Wheel---------------------------------- */
+.title{
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 20px;
+} 
+
+.photo-wheel{
+    margin-top: 175px;
+    /* height: 600px; */
+    margin-bottom: 20px;
+}
+
+.photo-wheel::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 350px;   /* Adjust based on carousel height */
+  }
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 150px auto;
+    perspective: 1000px;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+    top: -100px; /* Adjust to move carousel up if needed */
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 33px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    /* box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5); */
+    display: flex;
+  }
+  
+  /* span {
+    margin: auto;
+    font-size: 2rem;
+  } */
+
+
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("/Images/photos/photo1.png");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("/Images/photos/photo2.png");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("/Images/photos/photo3.png");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("/Images/photos/photo4.png");
+    transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("/Images/photos/photo5.png");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("/Images/photos/photo6.png");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("/Images/photos/photo7.png");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("/Images/photos/photo8.png");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("/Images/photos/photo9.png");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+
+/*--------------------------------------Whatsapp---------------------------------------*/
+  
+.whatsapp{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
+.whatsapp .fa-whatsapp{
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  align-self: center;
+  /* margin-top: 20px; */
+  font-size: 50px !important;
+  font-weight: bolder !important;
+  /* width: 200px !important; */
+}
+
+#whatsappcont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#clickhere{
+  display: flex;
+  align-self: center;
+  text-decoration: none;
+  /* color: #008000; */
+  color: black;
+}
+
+
+
+
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content, .contact-info {
+    flex: 1;
+}
+
+/* footer */
+.footer{
+    position: relative;
+    background-color:  rgba(255, 255, 255, 0.8); 
+    /* position: sticky;
+    bottom: 0; */
+    text-align: center;
+    padding-top: 30px;
+    /* margin-top: 400px; */
+   /* position: fixed;
+   bottom: 0;
+    left: 0; */
+    margin-top: auto;
+  width: 100%;
+  z-index: 10;
+}
+
+.footer h4{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.icons .ico{
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+
+/* ---------------------------Term Insurance----------------------------*/
+
+.caption{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* .caption p{
+  font-size: 100px;
+}
+
+.purple{
+color: #5E45A4;
+font-weight: bold;
+}
+
+.caption h5{
+  color: #5E45A4;
+  font-size: 30px;
+}
+*/
+.contact-us{
+  width: 90%;
+  /* height: 500px; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+} 
+
+.ytembed{
+
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  /* margin-left: 120px; */
+  
+}
+
+.ulipImg{
+  width: 100%;
+  border-radius: 6px;
+}
+
+.prod-img{
+  width: 600px;
+}
+
+.description{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  /* background-image: url("../../Images/products/card-bg1.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;  */
+  font-family:"league-spartan";
+  text-align: center;
+}
+
+.description p{
+  font-size: 40px;
+  font-weight: 800;
+}
+
+
+.contact-btn{ 
+  margin-top: 30px;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  font-weight: bold;
+  color: #300a8f;
+  border: 2px solid #300a8f;
+  font-size: 30px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 50PX;
+}
+
+.contact-btn:hover {
+ color: rgb(255, 255, 255);
+  background-color: #5E45A4;
+  border: 1px solid #5E45A4;
+  transition: 0.5s;
+}
+
+.red{
+  color: red;
+}
+.green{
+  color: green;
+  font-size: 45px;
+}
+.p-purple{
+  color: #5E45A4;
+}
+
+.top-container{
+  /* background-color: yellow; */
+  width: 90%;
+  display: flex;
+  gap: 0;
+  margin-left: 15px;
+  margin-right: auto ;
+}
+
+.term-img{
+  display: flex;
+  justify-content:flex-end;
+  margin-right: 10px;
+  width: 40%;
+}
+
+.term-img img{ 
+  max-width: 100%;
+  max-height: 325px;
+}
+
+.term-text{
+  width: 60%;
+}
+
+.term-text img{
+  width: 100%;
+}
+
+
+/*Headings*/
+
+.headline{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.headline h1{
+  font-size: 50px;
+}
+
+/*Health Page*/
+
+.health-container{
+  /* background-color: yellow; */
+  width: 90%;
+  display: flex;
+  gap: 0;
+  margin-left: 15px;
+  margin-right: auto ;
+}
+
+.health-img{
+  display: flex;
+  justify-content:flex-end;
+  /* margin-right: 10px; */
+  margin-left: 70px;
+  width: 25%;
+}
+
+.health-img img{ 
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.health-text1{
+  width: 40%;
+}
+
+.health-text1 img{
+  width: 450px;
+  height: 300px;
+  margin-left: 45px;
+  margin-top: 20px;
+}
+
+.health-text2{
+  width: 35%;
+}
+
+.health-text2 img{
+  width:450px;
+  height: 400px;
+  margin-top: -10px;
+}
+
+
+
+
+/*Children Section*/
+
+.child-container{
+  /* background-color: yellow; */
+  width: 90%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.child-img1{
+  /* display: flex; */
+  /* justify-content:flex-end; */
+  /* margin-right: 10px; */
+  /* margin-left: 70px; */
+  width: 30%;
+}
+
+.child-img1 img{ 
+  max-width: 100%;
+  max-height: 400px;
+  margin-top: 10px;
+}
+
+.child-img2{
+  /* display: flex;
+  justify-content:flex-end; */
+  /* margin-right: 10px; */
+  /* margin-left: 70px; */
+  width: 30%;
+}
+
+.child-img2 img{ 
+  max-width: 100%;
+  max-height: 400px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.child-text{
+  width: 60%;
+}
+
+.child-text img{
+  width:100%;
+  height: 400px;
+  margin-top: 10px;
+}
+
+
+/*Retirement Plan*/
+
+.retirement-container{
+  /* background-color: yellow; */
+  width: 90%;
+  display: flex;
+  gap: 0;
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+.retirement-img{
+  /* display: flex;
+  justify-content:flex-end;
+  margin-right: 10px;
+  width: 40%; */
+  width: 40%;
+}
+
+.retirement-img img{ 
+  max-width: 100%;
+  max-height: 500px;
+}
+
+.retirement-text{
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.retirement-text img{
+  width: 100%;
+}
+
+
+/*Pension Plan*/
+
+.pension-container{
+  /* background-color: yellow; */
+  width: 90%;
+  display: flex;
+  gap: 0;
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+.pension-img{
+  /* display: flex;
+  justify-content:flex-end;
+  margin-right: 10px;
+  width: 40%; */
+  width: 40%;
+}
+
+.pension-img img{ 
+  max-width: 100%;
+  max-height: 500px;
+  margin-top: -10px;
+}
+
+.pension-text{
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.pension-text img{
+  width: 100%;
+}
+
+/*Ulip plans*/
+
+.ulip-container{
+  width: 90%;
+  display: flex;
+  gap: 0;
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+.ulip-img{
+  /* display: flex;
+  justify-content:flex-end;
+  margin-right: 10px;
+  width: 40%; */
+  width: 40%;
+}
+
+.ulip-img img{ 
+  max-width: 100%;
+  max-height: 500px;
+  margin-top: -10px;
+}
+
+.ulip-text{
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.ulip-text img{
+  width: 100%;
+}
+
+/*Savings*/
+
+.savings-container{
+  /* background-color: yellow; */
+  width: 90%;
+  display: flex;
+  gap: 0;
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+.savings-img{
+  /* display: flex;
+  justify-content:flex-end;
+  margin-right: 10px;
+  width: 40%; */
+  width: 40%;
+}
+
+.savings-img img{ 
+  max-width: 100%;
+  max-height: 500px;
+  margin-top: -10px;
+}
+
+.savings-text{
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 10px; */
+}
+
+.savings-text img{
+  width: 100%;
+}
+
+.ytembed iframe{
+  width: 600px;
+  height: 400px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------ Responsive--------------------------------*/
+
+/*-------------------------Phone----------------------*/
+
+@media (max-width: 480px) {
+ 
+  /*-------------------------Navabr--------------------------------*/
+
+nav{
+    height: 50px;
+}
+
+nav img {
+    width: 200px;
+  }
+
+.nav-links ul li{
+    display: block;
+}
+.nav-links ul li a{
+    color: #f9fafb;
+}
+.nav-links{
+    position: fixed;
+    background-color: blueviolet;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+nav .fa-solid{
+    display: block;
+    color: black;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+nav .fa-xmark{
+    color:#f9fafb;
+}
+
+/*--------------------------------Term-------------------------*/
+.top-container{
+  flex-direction: column;
+}
+
+.term-img{
+  /* display: flex;*/
+  justify-content:center;
+/*  margin-right: 10px; */
+  width:100%
+}
+.term-img img{ 
+  max-width: 250px;
+  max-height: 325px;
+}
+.term-text{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-container{
+
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+/*-----------------------------youttube----------------------*/
+.ytembed iframe{
+  width: 300px;
+  height: 400px; 
+
+}
+
+.whatsapp{
+  gap: 10px;
+}
+
+
+#clickhere{
+  font-size: 20px;
+}
+
+
+/*--------------------------------Health-------------------------*/
+
+.health-container{
+  /* background-color: yellow; */
+  flex-direction: column;
+  gap: 0;
+  margin-left: auto;
+}
+
+.health-img{
+  justify-content:center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 300px;
+}
+.health-text1{
+  width: 100%;
+}
+.health-text1 img{
+  width: 310px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+}
+.health-text2{
+  width: 100%;
+}
+
+.health-text2 img{
+  width:290px;
+  height: 280px;
+  margin-top: -60px;
+}
+
+
+/*--------------------------------Child-------------------------*/
+
+.child-container{
+ flex-direction: column;
+}
+.child-img1{
+  display: flex;
+  justify-content:center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+.child-img1 img{ 
+  max-width: 60%;
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+.child-img2{
+  display: flex;
+  justify-content:flex-end;
+  width: 100%;
+}
+.child-img2 img{ 
+  max-width: 60%;
+  max-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.child-text{
+  width: 100%;
+}
+
+.child-text img{
+  width:100%;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------Retirement-------------------------*/
+
+.retirement-container{
+ flex-direction: column;
+}
+.retirement-img{
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.retirement-text{
+  width: 100%;
+}
+
+/*--------------------------------Pension-------------------------*/
+
+.pension-container{
+ flex-direction: column;
+}
+.pension-img{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pension-text{
+  width: 100%;
+  margin-top: 0;
+}
+
+/*--------------------------------Ulip-------------------------*/
+
+.ulip-container{
+ flex-direction: column;
+}
+.ulip-img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ulip-img img{ 
+  width: 80%;
+  height: 300px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ulip-text{
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+/*--------------------------------Savings-------------------------*/
+
+.savings-container{
+flex-direction: column;
+}
+.savings-img{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.savings-text{
+  width: 100%;
+}
+
+.description p{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.contact-btn{ 
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+}
+
+
+}
+
+
+/*--------------------------------Tab--------------------------*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+
+  /*----------------------------Navbar-----------------------------------*/
+  nav{
+      height: 50px;
+  }
+  
+  nav img {
+      width: 250px;
+    }
+  
+  .nav-links ul li{
+      display: block;
+  }
+  .nav-links ul li a{
+      color: #f9fafb;
+  }
+  .nav-links{
+      position: fixed;
+      background-color: blueviolet;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+  }
+  nav .fa-solid{
+      display: block;
+      color: black;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+  nav .fa-xmark{
+      color:#f9fafb;
+  }
+
+  /*-----------------------------youttube----------------------*/
+.ytembed iframe{
+width: 600px;
+height: 400px; 
+}
+
+
+  /*--------------------------------Term-------------------------*/
+.term-img{
+justify-content:center;
+}
+.term-img img{ 
+max-width: 200px;
+max-height: 300px;
+}
+.term-text{
+display:flex;
+justify-content: center;
+align-items: center;
+}
+/*--------------------------------Health-------------------------*/
+
+.health-container{
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.health-img{
+justify-content:flex-start;
+width: 130px;
+height: 250px;
+margin-left: 50px;
+
+}
+.health-text1{
+width: 40%;
+}
+.health-text1 img{
+width: 400px;
+height: 350px;
+margin-top: -30px;
+}
+.health-text2{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.health-text2 img{
+width:400px;
+height: 350px;
+margin-top: -60px;
+}
+
+/*--------------------------------Child-------------------------*/
+
+.child-img1 img{ 
+ height: 210px;
+ margin-top: 10px;
+}
+.child-img2 img{ 
+ max-height: 230px;
+} 
+
+.child-text{
+ width: 100%;
+}
+
+.child-text img{
+ width:100%;
+ height: 230px;
+ margin-left: 10px;
+ margin-right: auto;
+}
+
+/*--------------------------------Pension-------------------------*/
+
+.pension-text{
+margin-top: 55px;
+}
+
+/*--------------------------------Ulip-------------------------*/
+ .ulip-text{
+   margin-top: 30px;
+ }
+
+  
+}
+
+
+/*-------------------Small Laptops----------------------------------*/
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /*----------------------------Navbar-----------------------------------*/
+nav{
+  height: 50px;
+}
+
+nav img {
+  width: 250px;
+}
+
+    /*-----------------------------youttube----------------------*/
+.ytembed iframe{
+width: 700px;
+height: 400px; 
+}
+  /*--------------------------------Term-------------------------*/
+  .term-img{
+    justify-content:center;
+  }
+  .term-img img{ 
+    width: 300px;
+    max-height: 300px;
+    margin-left: 80px;
+  }
+  .term-text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .term-text img{
+   margin-left: 20px;
+  }
+
+  /*--------------------------------Health-------------------------*/
+
+.health-container{
+margin-left: auto;
+} 
+
+.health-img{
+justify-content:flex-start;
+width: 130px;
+height: 250px;
+margin-left: 50px;
+
+}
+.health-text1{
+width: 40%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.health-text1 img{
+width: 300px;
+height: 280px;
+margin-top: -30px;
+margin-left: 100px;
+}
+.health-text2{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.health-text2 img{
+width:300px;
+height: 250px;
+margin-top: -60px;
+margin-left: 20px;
+}
+
+/*--------------------------------Child-------------------------*/
+
+.child-img1 img{ 
+height: 210px;
+}
+.child-img2 img{ 
+max-height: 230px;
+} 
+.child-text img{
+height: 230px;
+}
+
+/*--------------------------------Ulip-------------------------*/
+.ulip-text{
+  margin-top: 40px;
+}
+
+}
+
+/*-----------------------------------Laptops----------------------*/
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+        /*-----------------------------youttube----------------------*/
+.ytembed iframe{
+width: 700px;
+height: 600px; 
+}
+
+  /*--------------------------------Health-------------------------*/
+  .health-text1 img{
+    width: 350px;
+    height: 410px;
+    margin-top: -30px;
+    margin-left: 80px;
+  }
+  .health-text2 img{
+    
+    margin-left: 0;
+  } 
+}
+

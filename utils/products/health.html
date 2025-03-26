@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Health Insurance</title>
+</head>
+<body>
+
+    <section class="header1">
+        <nav class="bg">
+            <a href="../../index.html"><img src="../../Images/logo1.png" alt="Logo"></a>
+        <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../aboutUs.html">About Us</a></li>
+                <li><a href="../contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section> 
+
+    <section class="headline">
+        <h1 style="color : #5E45A4">HEALTH INSURANCE</h1>
+    </section>
+
+    <section class="caption">
+        <div class="health-container">
+         <div class="health-img">
+             <img src="../../Images/products/health/health-img.png" alt="Term Image">
+         </div>
+         <div class="health-text1"><img src="../../Images/products/health/health-text1.png" alt="Health text"></div>
+         <div class="health-text2"><img src="../../Images/products/health/health-text2.png" alt="Health text"></div>
+        </div>
+ </section>
+    
+    
+    <section class="contact-us">
+        <div class="ytembed">
+            <iframe 
+     src="https://www.youtube.com/embed/c9sdLGg1VLE?autoplay=1&loop=1&playlist=c9sdLGg1VLE"   title="YouTube Short"  allow="autoplay; encrypted-media"  allowfullscreen> </iframe>
+        </div>
+        <div class="description">
+            <p>Your <span class="p-purple"><b>health</b></span>, your <span class="green"><b>peace of mind—protected. </b></span>Get the coverage you deserve <b>today!</b> </p>
+          <a href="../contactUs.html" class="contact-btn">Contact Us</a>
+          <div class="whatsapp">
+            <a id="whatsappcont" href="https://wa.me/919492719182?text=Hi%2C%20I%20am%20intrested%20in%20Health%20Insurance%20Plans" target="_blank">
+                <i class="fa-brands fa-whatsapp" style="color: #93e675;"></i></a>
+                <a id="whatsappcont" href="https://wa.me/919492719182?text=Hi%2C%20I%20am%20intrested%20in%20Health%20Insurance%20Plans" target="_blank"><p id="clickhere">+91 9492719182</p></a>
+          </div>
+        </div>
+    </section>
+    
+
+<!-- -----------------footer--------------- -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are a trusted insurance agency dedicated to providing comprehensive policies <br> from leading insurance providers. With years of industry experience, <br> We help individuals and businesses find the best coverage tailored to their needs.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/share/18n3wZrj19/"><i class="ico fa-brands fa-facebook" style="color: #5e45a4;"></i></a>
+        <a href="https://www.instagram.com/giribabuk_financialadvisor/profilecard/?igsh=N3QzZnc2djE3b215"><i class="ico fa-brands fa-instagram" style="color: #5e45a4;"></i></a>
+        <a href="https://youtube.com/@giribabukfinancialadvisor?si=ikndlwdk2WZJ96n1"><i class="ico fa-brands fa-youtube" style="color: #5e45a4;"></i></a>
+        <a href="mailto:example@email.com"><i class="ico fa-solid fa-envelope" style="color: #5e45a4;"></i></a>
+        <a href="https://wa.me/919492719182?text=Hi%2C%20I%20am%20intrested%20in%20Health%20Insurance%20Plans"><i class="ico fa-brands fa-whatsapp" style="color: #5e45a4;"></i></a>
+    </div>
+    <p>Made by Dk & NK <i class="ico fa-solid fa-code" style="color: #5e45a4;"></i></p>
+</section>
+
+
+<script>
+    let navLinks = document.getElementById("navLinks");
+    function showMenu(){
+         navLinks.style.right =" 0";            
+    }
+    function hideMenu(){
+    navLinks.style.right = "-200px";            
+    }
+    </script>
+    <script src="https://kit.fontawesome.com/8178d30b72.js" crossorigin="anonymous"></script>
+</body>
+</html>

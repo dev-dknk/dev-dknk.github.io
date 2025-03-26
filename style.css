@@ -1,0 +1,1136 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", serif;
+}
+
+/* Font declarations */
+@font-face {
+  font-family: "Anton";
+  src: url("fonts/Anton-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Twister";
+  src: url("fonts/Twister.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  /* min-height: 100vh; */
+  width: 100%;
+  /* height: 10vh; */
+  /* background-image: url(Images/banner/BAGROUND\ IMAGE.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden; */
+}
+
+nav {
+  height: 20px;
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  /* backdrop-filter: blur(10px); */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+  width: 300px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: black;
+  text-decoration: none;
+  color: #5e45a4;
+  font-weight: 600;
+  /* font-size: 13px; */
+}
+
+.nav-links ul li ::after {
+  content: " ";
+  width: 0;
+  height: 4px;
+  border-radius: 5%;
+  background: #5e45a4;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover ::after {
+  width: 100%;
+}
+
+/* Banner Styles */
+
+/* .home-banner {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  background-image: url("/Images/banner/BAGROUND\ IMAGE.png");
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.col1 {
+  width: 50%;
+}
+
+.col1 .family {
+  width: 100%;
+}
+
+.col2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.col2 .small-logo {
+  width: 100px;
+  margin-top: 10px;
+  align-self: self-end;
+  margin-right: 95px;
+}
+
+.small-logo img {
+  margin-top: 10px;
+  width: 60px;
+}
+
+.insurance-text {
+  width: 100%;
+}
+.insurance-text img {
+  width: 65%;
+  margin-left: 35px;
+}
+
+#tagline1 {
+  font-size: 90px;
+  margin-left: 50px;
+}
+#tagline2 {
+  font-size: 90px;
+  margin-left: 130px;
+}
+
+.tagline {
+  font-family: "Twister", cursive;
+  font-size: 3.5rem;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0;
+} */
+
+.banner{
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blueviolet;*/
+} 
+
+.slider{
+  position: relative;
+  width: 100%;  /*chnaged here 800  */
+  height: 100%;   /*chnaged here 500  */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%; /*chnaged here 500  */
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 100%;  /*chnaged here 800  */
+  height: 100%;  /*chnaged here 500  */
+}
+
+/* Css for manual slide navigation */
+
+/* .navigation-manual{
+  position: absolute;
+  width: 100%;  chnaged here 800px 
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}  */
+
+.navigation-manual, .navigation-auto{
+  position: absolute;
+  /* top: 10px; */
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 10;
+}
+
+
+.manual-btn{
+  border: 2px solid #5e45a4;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: #5e45a4;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/* css for automatic navigation*/
+
+/* .navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 100%;   chnaged here 800px 
+  justify-content: center;
+  bottom: 98px;
+  margin-top: 826px;   chnaged here 460 
+} */
+
+.navigation-auto div{
+  border: 2px solid #5e45a4;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+background-color:  #5e45a4;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color:  #5e45a4;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color:  #5e45a4;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background-color:  #5e45a4;
+}
+
+
+nav .fa-solid {
+  display: none;
+}
+
+/* ------------------products------------------- */
+
+.products {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.products h3 {
+  font-weight: bolder;
+}
+
+.products .row {
+  gap: 20px;
+}
+
+.products .row a {
+  text-decoration: none;
+  color: #5e45a4;
+  width: 30%;
+}
+/* .products h3 a{
+    text-decoration: none;
+    color: black;
+} */
+
+p {
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  width: 80%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-col {
+  /* flex-basis: 31%; */
+  height: 200px;
+  background-color: #f8f9fa;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+h3 {
+  font-weight: 600;
+}
+.product-col:hover {
+  box-shadow: 0 0 20px 0px rgba(19, 15, 19, 0.6);
+  transform: scale(1.03);
+  background-color: #5e45a4;
+  color: white;
+  cursor: pointer;
+}
+.product-col img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+/* 
+#termImg {
+  width: 100%;
+} */
+
+/* -------------------Brands Section------------------------- */
+.brands {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Logo Carousel Styles */
+.logo-carousel {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: white;
+  padding: 10px 0;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+.logo {
+  height: 200px;
+  margin: 0 10px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* Animation for continuous scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-1 * (7 * (200px + 120px)))
+    ); /* 7 logos × (logo width + margins) */
+  }
+}
+
+/* Pause animation on hover */
+.logo-carousel:hover .logo-container {
+  animation-play-state: paused;
+}
+
+/* -------------------Reviews Section------------------------- */
+
+.reviews {
+  width: 100%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 30px 0;
+  background-color: #f8f9fa;
+}
+
+/* Reviews Carousel */
+.reviews-carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Reviews Track - Container for all review cards */
+.reviews-track {
+  display: flex;
+  gap: 30px;
+  width: fit-content;
+  animation: reviews-scroll 60s linear infinite;
+}
+
+/* Pause animation on hover */
+.reviews-track:hover {
+  animation-play-state: paused;
+}
+
+/* Review Card */
+.review-card {
+  flex: 0 0 350px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.review-content {
+  padding: 25px;
+}
+
+/* Reviewer Info */
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reviewer-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.reviewer-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviewer-name h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.reviewer-location {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Stars */
+.stars {
+  color: #ffd700;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Review Text */
+.review-text {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ----------------------Contact Section------------------------- */
+
+.contact {
+  margin: 100px auto;
+  width: 90%;
+  height: 70px;
+  background-image: url(Images/bg.avif);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 50px 0 150px 0;
+  backdrop-filter: blur;
+}
+.contact h1 {
+  margin-bottom: 30px;
+  font-size: 35px;
+  color: #5e45a4;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #5e45a4;
+  border: 2px solid #5e45a4;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #5e45a4;
+  transition: 0.5s;
+}
+
+/* -----------------Footer--------------------- */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.icons .ico {
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+/* Reviews carousel animation */
+@keyframes reviews-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Move by the width of all original slides (3 review cards) */
+    transform: translateX(calc(-350px * 3 - 30px * 3));
+  }
+}
+
+/* --------------------Posters Section-------------------------- */
+.posters {
+  width: 100%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* Posters Carousel */
+.posters-carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Carousel Track - Container for all slides */
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  animation: carousel 70s linear infinite; /* Slowed down from 30s to 60s */
+}
+
+/* Pause animation on hover */
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+/* Carousel Slide - Individual post container */
+.carousel-slide {
+  flex: 0 0 250px;
+  height: 312px; /* 4:3 aspect ratio (250 * 3/4 = ~187) */
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Floating effect on hover */
+.carousel-slide:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Carousel animation */
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Move by the width of all original slides (10 slides for posters) */
+    transform: translateX(calc(-250px * 10 - 20px * 10));
+  }
+}
+
+.ytembed iframe{
+  width: 500px;
+  height: 400px; 
+}
+
+/*------------------------------------------About Us Page----------------------------------------  */
+
+.container {
+  background-image: url(images/bg.avif);
+}
+
+
+
+/*--------------------------------Phone--------------------------*/
+
+
+@media (max-width: 480px) {
+    .insurance-text {
+      font-size: 2.5rem;
+    }
+  
+    .tagline {
+      font-size: 1.8rem;
+    }
+    .carousel-slide {
+      flex: 0 0 150px;
+      height: 112px; /* 4:3 aspect ratio (150 * 3/4 = ~112) */
+    }
+   
+    @keyframes carousel {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-150px * 10 - 20px * 10));
+      }
+    }
+  
+  
+    /* Reviews carousel responsive for smallest screens */
+    .review-card {
+     height: 550px;
+      }
+
+    .review-card {
+        flex: 0 0 250px;
+      }
+    
+      .reviews-track {
+        gap: 20px;
+      }
+    
+      @keyframes reviews-scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-250px * 3 - 20px * 3));
+        }
+      }
+    
+      .reviewer-img {
+        width: 50px;
+        height: 50px;
+      }
+      .reviewer-name h3 {
+        font-size: 16px;
+      }
+    
+      .review-text {
+        font-size: 14px;
+      }
+
+
+    .logo {
+      height: 150px;
+    }
+    .logo-carousel{
+        height: 110px;
+    }
+
+    @keyframes scroll {
+      100% {
+        transform: translateX(calc(-1 * (7 * (50px + 30px))));
+      }
+    }
+  
+    /*-------------------------Navabr--------------------------------*/
+  
+  nav{
+      height: 50px;
+  }
+  
+  nav img {
+      width: 200px;
+    }
+  
+  .nav-links ul li{
+      display: block;
+  }
+  .nav-links ul li a{
+      color: #f9fafb;
+  }
+  .nav-links{
+      position: fixed;
+      background-color: blueviolet;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+  }
+  nav .fa-solid{
+      display: block;
+      color: black;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+  nav .fa-xmark{
+      color:#f9fafb;
+  }
+  
+  /*------------------------banner-----------------------*/
+/*   
+.home-banner {
+    height: 29vh;
+  }
+
+  .col1 .family{ 
+    height: 29vh;
+  }
+
+  .col2 .small-logo {
+    width: 100px;
+    margin-top: -3px;
+    align-self: self-end;
+    margin-right: -36px;
+  }
+  
+  .small-logo img {
+    margin-top: 5px;
+    width: 40px;
+  }
+
+  #tagline1 {
+    font-size: 25px;
+    margin-left: 0px;
+  }
+  #tagline2 {
+    font-size: 25px;
+    margin-left: 38px;
+  }
+
+  .tagline{
+    line-height: 0.8;
+  } */
+
+  .banner{
+  width: 100%;
+  height: 35vh;
+  } 
+
+  .manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 10px;
+}
+
+
+/*---------------products-------------------*/  
+
+
+  .products .row a {
+    text-decoration: none;
+    color: #5e45a4;
+    width: 26%;
+  }
+  .product-col {
+    /* flex-basis: 31%; */
+    height: 150px;
+  }
+  .product-col img {
+    width: 100px;
+    height: 50px;
+  }
+  .row h3{
+    font-size: 11px;
+  }
+
+  /*----------------------------------Posters----------------------------------*/
+  .carousel-slide {
+    height: 312px; /* 4:3 aspect ratio (250 * 3/4 = ~187) */
+    flex: 0 0 250px;
+  }
+/*---------------------------------------Contact-Us-------------------------------------------------*/
+  .contact h1 {
+    font-size: 20px;
+  }
+}
+
+
+
+
+/*--------------------------------Tab--------------------------*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+  
+
+    /*----------------------------Navbar-----------------------------------*/
+    nav{
+        height: 50px;
+    }
+    
+    nav img {
+        width: 250px;
+      }
+    
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul li a{
+        color: #f9fafb;
+    }
+    .nav-links{
+        position: fixed;
+        background-color: blueviolet;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    nav .fa-xmark{
+        color:#f9fafb;
+    }
+    
+    /*----------------------Banner------------*/
+    
+      
+    /* .home-banner {
+        height: 40vh;
+      }
+    
+      .insurance-text img {
+        width: 80%;
+        margin-left: 35px;
+      }
+    
+      .col2 .small-logo {
+        width: 100px;
+        margin-top: -3px;
+        align-self: self-end;
+        margin-right: -36px;
+      }
+      
+      .small-logo img {
+        margin-top: 5px;
+        width: 40px;
+      }
+    
+      #tagline1 {
+        font-size: 50px;
+        margin-left: 0px;
+      }
+      #tagline2 {
+        font-size: 50px;
+        margin-left: 80px;
+      }
+    
+      .tagline{
+        line-height: 0.8;
+      } */
+      .banner{
+        width: 100%;
+        height: 90vh;
+        } 
+    
+    /*---------------------------Poster------------------------------*/
+    .carousel-slide {
+        height: 312px; /* 4:3 aspect ratio (250 * 3/4 = ~187) */
+        flex: 0 0 250px;
+      }
+    
+        @keyframes carousel {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(calc(-200px * 10 - 20px * 10));
+          }
+        }
+      
+      
+        /* Reviews carousel responsive */
+        .review-card {
+          flex: 0 0 300px;
+        }
+      
+        @keyframes reviews-scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(calc(-300px * 3 - 30px * 3));
+          }
+        }
+    
+        /* Banner responsive styles */
+        .banner-content {
+          flex-direction: column;
+          padding: 20px;
+        }
+      
+        .banner-images {
+          margin-bottom: 20px;
+        }
+      
+        .banner-text {
+          align-items: center;
+          padding-left: 0;
+        }
+      
+        .main-text {
+          align-items: center;
+          text-align: center;
+        }
+      
+        .insurance-text {
+          font-size: 3rem;
+        }
+      
+        .tagline {
+          font-size: 2rem;
+          text-align: center;
+        }
+    
+        /*-----------------------------Logos-----------------------*/
+        .logo {
+            height: 120px;
+          }
+          .logo-carousel{
+              height: 110px;
+          }
+      
+        @keyframes scroll {
+          100% {
+            transform: translateX(calc(-1 * (7 * (70px + 40px))));
+          }
+        }
+    /*Banner*/
+        .manual-btn:not(:last-child){
+          margin-right: 10px;
+      }
+      
+      .navigation-auto div:not(:last-child){
+        margin-right: 10px;
+      }
+}
+
+
+/*-------------------Small Laptops----------------------------------*/
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+  .logo {
+    height: 85px;
+    margin: 0 25px;
+  }
+
+  @keyframes scroll {
+    100% {
+      transform: translateX(calc(-1 * (7 * (85px + 50px))));
+    }
+  }
+    /*----------------------------Navbar-----------------------------------*/
+nav{
+    height: 50px;
+}
+
+nav img {
+    width: 250px;
+  }
+
+/*----------------------Banner------------*/
+/* .home-banner {
+    height: 55vh;
+  }
+
+  .insurance-text img {
+    width: 80%;
+    margin-left: 35px;
+  }
+
+  .col2 .small-logo {
+    width: 100px;
+    margin-top: -3px;
+    align-self: self-end;
+    margin-right: -36px;
+  }
+  
+  .small-logo img {
+    margin-top: 5px;
+    width: 40px;
+  }
+
+  #tagline1 {
+    margin-top: 15px;
+    font-size: 70px;
+    margin-left: 0px;
+  }
+  #tagline2 {
+    font-size: 70px;
+    margin-left: 80px;
+  }
+
+  .tagline{
+    line-height: 0.8;
+  } */
+  .banner{
+    width: 100%;
+    height: 50vh;
+    } 
+
+    /*-----------------------------Logos-----------------------*/
+  .logo {
+    height: 140px;
+  }
+  .logo-carousel{
+      height: 110px;
+  }
+
+@keyframes scroll {
+  100% {
+    transform: translateX(calc(-1 * (7 * (70px + 40px))));
+  }
+}
+}
+
+
+
+/*-----------------------------------Laptops----------------------*/
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .logo {
+    height: 100px;
+    margin: 0 30px;
+  }
+
+  @keyframes scroll {
+    100% {
+      transform: translateX(calc(-1 * (7 * (100px + 60px))));
+    }
+  }
+
+  /*----------------------Banner------------*/
+
+/* .home-banner {
+    height: 70vh;
+  } */
+
+   /*-----------------------------Logos-----------------------*/
+   .logo {
+    height: 150px;
+  }
+  .logo-carousel{
+      height: 110px;
+  }
+
+@keyframes scroll {
+  100% {
+    transform: translateX(calc(-1 * (7 * (70px + 40px))));
+  }
+}
+}
